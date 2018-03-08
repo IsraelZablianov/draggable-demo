@@ -1,5 +1,8 @@
 <template>
     <div class="main">
+        <div>
+            <img :src="vueLogo" alt="Vue Logo">
+        </div>
     </div>
 </template>
 
@@ -10,7 +13,7 @@ const vueLogo = require("../../assets/images/logo-vue.png");
 @Component({
 })
 export default class App extends Vue { 
-
+    vueLogo = vueLogo;
 }
 </script>
 
