@@ -1,13 +1,14 @@
 
-var path = require('path')
-var webpack = require('webpack')
+var path = require('path');
+var webpack = require('webpack');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.ts',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'build.js'
+    filename: 'index.js'
   },
   module: {
     rules: [
@@ -42,13 +43,6 @@ module.exports = {
         options: {
           appendTsSuffixTo: [/\.vue$/],
         }
-      },
-      {
-        test: /\.(png|jpg|gif|svg)$/,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]?[hash]'
-        }
       }
     ]
   },
@@ -65,7 +59,12 @@ module.exports = {
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map'
+  devtool: '#eval-source-map',
+  plugins: [
+    new CopyWebpackPlugin([
+      { from: 'src/assets', to: 'assets' }
+    ])
+  ]
 }
 
 if (process.env.NODE_ENV === 'production') {
