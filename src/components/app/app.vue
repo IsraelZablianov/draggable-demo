@@ -5,6 +5,7 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from "vue-property-decorator";
+const vueLogo = require("../../assets/images/logo-vue.png");
 
 @Component({
 })
