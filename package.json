@@ -18,19 +18,19 @@
   "dependencies": {
     "draggable-vue-directive": "^1.0.3",
     "vue": "^2.5.2",
+    "file-loader": "^1.1.11",
+    "vue-loader": "^12.0.3",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.2",
+    "css-loader": "^0.28.10",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^6.0.0"
   },
   "devDependencies": {
     "@types/node": "^9.4.6",
-    "css-loader": "^0.28.10",
-    "file-loader": "^1.1.11",
     "node-sass": "^4.7.2",
-    "sass-loader": "^6.0.7",
-    "style-loader": "^0.20.2",
     "ts-loader": "^2.3.7",
     "typescript": "^2.3.2",
-    "vue-loader": "^12.0.3",
     "vue-template-compiler": "^2.5.2",
     "webpack": "^2.5.0",
     "webpack-dev-server": "^2.11.1"
