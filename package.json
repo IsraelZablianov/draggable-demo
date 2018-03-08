@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Demo site for draggable-vue-directive",
-  "main": "./index.html",
+  "main": "./dist/build.js",
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
