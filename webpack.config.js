@@ -27,6 +27,13 @@ module.exports = {
         }
       },
       {
+        test: /\.(png|jpg|gif|svg)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]?[hash]'
+        }
+      },
+      {
         test: /\.scss$/,
         use: [{
           loader: "style-loader" // creates style nodes from JS strings
