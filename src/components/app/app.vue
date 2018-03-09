@@ -9,7 +9,7 @@
             </div>
         </div>
         <div>
-            <img :src="vueLogo" alt="Vue Logo">
+            <img src="../../assets/images/logo-vue.png" alt="Vue Logo">
         </div>
 
         <div class="draggable-container" v-for="boxNumber in boxes" :key="boxNumber" v-draggable>
@@ -25,7 +25,6 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from "vue-property-decorator";
-const vueLogo = require("../../assets/images/logo-vue.png");
 import { Draggable } from "draggable-vue-directive";
 @Component({
     directives: {
@@ -33,7 +32,6 @@ import { Draggable } from "draggable-vue-directive";
     }
 })
 export default class App extends Vue { 
-    vueLogo = vueLogo;
     boxes: number = 0;
 
     addBox() {
