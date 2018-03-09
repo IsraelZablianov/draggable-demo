@@ -9,7 +9,7 @@
             </div>
         </div>
         <div>
-            <img src="../../assets/images/logo-vue.png" alt="Vue Logo">
+            <img src="assets/images/logo-vue.png" alt="Vue Logo">
         </div>
 
         <div class="draggable-container" v-for="boxNumber in boxes" :key="boxNumber" v-draggable>
