@@ -17,7 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "css-loader": "^0.28.10",
-    "draggable-vue-directive": "^1.0.3",
+    "draggable-vue-directive": "^1.1.0",
     "file-loader": "^1.1.11",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.2",
