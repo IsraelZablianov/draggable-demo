@@ -2,3 +2,11 @@ html, body {
     height: 100%;
     width: 100%;
 }
+
+body {
+    background-image: url(assets/images/city.gif);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: 0;
+    overflow: hidden;
+}
