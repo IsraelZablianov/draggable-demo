@@ -59,7 +59,7 @@ export default class App extends Vue {
     draggableWithResetPosition: DraggableValue = { resetInitialPos: false };
 
     addBox() {
-        this.boxes++;
+        this.boxes++; 
     }
 
     clearAll() {
@@ -67,18 +67,14 @@ export default class App extends Vue {
     }
 
     mounted() {
-        var boundingRect = this.$refs.bounder && 
-            (this.$refs.bounder as HTMLElement).getBoundingClientRect();
-        var rectWithBorderFix = {
-            bottom: boundingRect.bottom - 5,
-            height: boundingRect.height + 5,
-            left: boundingRect.left + 5,
-            right: boundingRect.right - 5,
-            top: boundingRect.top + 5,
-            width: boundingRect.width + 5
+        this.draggableWithBoundries.boundingElement = this.$refs.bounder as HTMLElement;
+        this.draggableWithBoundries.boundingRectMargin = {
+            top: 2,
+            bottom: 2,
+            left: 2,
+            right: 2
         };
 
-        this.draggableWithBoundries.boundingRect = rectWithBorderFix;
         this.draggableWithHandler.handle = this.$refs.handler as HTMLElement;
     }
 
