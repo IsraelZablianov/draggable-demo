@@ -16,7 +16,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "draggable-vue-directive": "^2.0.3",
+    "draggable-vue-directive": "^2.1.0",
     "vue": "^2.5.2",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^6.0.0"
